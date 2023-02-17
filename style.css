@@ -165,7 +165,7 @@ a {
 }
 
 .header__wrapper .cols__container .right__col .photos img {
-    max-width: 50%;
+    max-width: 100%;
     display: block;
     height: 100%;
     object-fit: cover;
@@ -194,6 +194,7 @@ a {
         height: 365px;
         overflow: auto;
         padding:  0 0 30px;
+    object-fit: cover;
     }
 }
 
