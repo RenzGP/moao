@@ -191,7 +191,7 @@ a {
         gap: 30px;
     }
     .header__wrapper .cols__container .right__col .photos {
-        height: 365px;
+        height: 100%;
         overflow: auto;
         padding:  0 0 30px;
     object-fit: cover;
