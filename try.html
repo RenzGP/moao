@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pop-up Modal Example</title>
+	<style>
+		/* Style the modal */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Style the modal content */
+		.modal-content {
+			background-color: #fefefe;
+			margin: 15% auto; /* 15% from the top and centered */
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%; /* Could be more or less, depending on screen size */
+		}
+	</style>
+</head>
+<body>
+
+	<!-- Button to open the modal -->
+	<button onclick="document.getElementById('myModal1').style.display='block'">Open Modal 1</button>
+
+	<!-- The Modal -->
+	<div id="myModal1" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span onclick="document.getElementById('myModal1').style.display='none'" class="close">&times;</span>
+	    <p>Modal 1 Content Goes Here</p>
+	  </div>
+
+	</div>
+
+	<!-- Button to open the modal -->
+	<button onclick="document.getElementById('myModal2').style.display='block'">Open Modal 2</button>
+
+	<!-- The Modal -->
+	<div id="myModal2" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span onclick="document.getElementById('myModal2').style.display='none'" class="close">&times;</span>
+	    <p>Modal 2 Content Goes Here</p>
+	  </div>
+
+	</div>
+
+	<script>
+		// Get the modal
+		var modal1 = document.getElementById('myModal1');
+		var modal2 = document.getElementById('myModal2');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal1) {
+				modal1.style.display = "none";
+			}
+			if (event.target == modal2) {
+				modal2.style.display = "none";
+			}
+		}
+	</script>
+
+</body>
+</html>

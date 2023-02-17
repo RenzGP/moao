@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moao</title>
+    <link rel="shortcut icon" href="icon/symb.png">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+
+    <div class="header__wrapper">
+        <header></header>
+        <div class="cols__container">
+            <div class="left__col">
+                <div class="img__container">
+                    <img src="icon/user1.jpg" alt="moao" />
+                    <span></span>
+                </div>
+                <h2>Ash Mapula</h2>
+                <p>English Teacher at Divine Light Academy - Bacoor City Cavite</p>
+                <p>PNUAN</p>
+
+                <ul class="about">
+                    <li><span>5823</span>Followers</li>
+                    <li><span>223</span>Following</li>
+                    <li><span>123</span>Attractions</li>
+                </ul>
+                <div class="content">
+                    <p>Burger Steak, Yum burger, Fries, and Coke Float</p>
+                    <ul>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-pinterest"></i></li>
+                        <li><i class="fab fa-facebook"></i></li>
+                        <li><i class="fab fa-instagram"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right__col">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Photos</a></li>
+                        <li><a href="page1.html">Music</a></li>
+                        <li><a href="page2.html">Message</a></li>
+                        <!-- <li><a href="#">About</a></li> -->
+                    </ul>
+                    <button>Follow</button>
+                </nav>
+
+                <!-- <div class="inbox">
+                    <div class="message">
+                        <img class="profile-pic" src="icon/icon2.jpg">
+                        <div class="info">
+                      <div class="sender">John Doe</div>
+                      <div class="subject">Meeting Tomorrow</div>
+                      <div class="date">12:30 PM</div>
+                      <div class="preview">Hey, just a reminder that we have a meeting tomorrow at 2 PM. See you then!</div>
+                    </div>
+                    </div>
+                  </div> -->
+<!-- 
+                  <button id="open-modal">Open Modal</button> -->
+                  
+                  <div class="inbox">
+                    <button class="my-button" id="open-modal">
+                    <div class="message">
+                        <img class="profile-pic" src="icon/icon2.jpg">
+                        <div class="info">
+                      <div class="sender">John Doe</div>
+                      <div class="subject">Meeting Tomorrow</div>
+                      <div class="date">12:30 PM</div>
+                      <div class="preview">Hoy backla, may sasabihin ako sa'yo. Hiya ako sa personal ihh</div>
+                    </div>
+                    </div>
+                </button>
+                  </div>
+
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Hello, this is my own way of confessing. You can ask me later if bakit gantong way HAHAHAHHA.
+      More or less alam mo naman na na gusto kita. Liking you is not really intentional, hindi ko nga rin alam bakit eh. Hindi rin naman ganun kaclose turing mo sa akin, tipikal lang na magkachat, parang magkagrupo sa thesis, yet I still like you, well hindi ko rin naman talaga alam kung bakit eh. I’m telling you this para hindi na rin confusing. You don’t need to reciprocate that feeling, but I want you to know na with a chance or not, I will still wait for you. Sa point na ‘to alam ko naman na yung sagot, still, just like the moon, I am fine admiring you from afar, as long as you are happy. Remember that wala man akong chance sa’yo pero at least may chance ka sa akin HAHAHAHAH
+      </p>
+  </div>
+</div>
+                  
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+   .inbox {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sender {
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.subject {
+  font-weight: bold;
+  margin-top: 5px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.preview {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.my-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 300px;
+    }
+
+
+  }
+
+  @media (max-width: 768px) {
+  .inbox {
+    max-width: 90%;
+
+  }
+  .info{
+    size: 1px;
+  }
+}
+</style>
+<script>
+    const openModalButton = document.getElementById("open-modal");
+const modal = document.getElementById("modal");
+const closeButton = document.querySelector(".close");
+
+openModalButton.addEventListener("click", function() {
+  modal.style.display = "block";
+});
+
+closeButton.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+</script>
